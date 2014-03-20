@@ -5,9 +5,9 @@ var path = require('path');
 var helpers = require('yeoman-generator').test;
 
 
-describe('selena generator', function() {
-    beforeEach(function(done) {
-        helpers.testDirectory(path.join(__dirname, 'temp'), function(err) {
+describe('selena generator', function () {
+    beforeEach(function (done) {
+        helpers.testDirectory(path.join(__dirname, 'temp'), function (err) {
             if (err) {
                 return done(err);
             }
@@ -19,7 +19,7 @@ describe('selena generator', function() {
         }.bind(this));
     });
 
-    it('creates expected files', function(done) {
+    it('creates expected files', function (done) {
         var expected = [
             // add files you expect to exist here.
             'app',
@@ -39,6 +39,7 @@ describe('selena generator', function() {
             'app/config/development/database.json',
             'app/config/development/errors.json',
             'app/config/development/i18n.json',
+            'app/config/development/mail.json',
             'app/config/development/middlewares.json',
             'app/config/development/ssl.json',
             'app/config/production',
@@ -47,6 +48,7 @@ describe('selena generator', function() {
             'app/config/production/cors.json',
             'app/config/production/database.json',
             'app/config/production/i18n.json',
+            'app/config/production/mail.json',
             'app/config/production/errors.json',
             'app/config/production/middlewares.json',
             'app/config/production/ssl.json',
@@ -56,6 +58,7 @@ describe('selena generator', function() {
             'app/config/test/cors.json',
             'app/config/test/database.json',
             'app/config/test/i18n.json',
+            'app/config/test/mail.json',
             'app/config/test/errors.json',
             'app/config/test/middlewares.json',
             'app/config/test/ssl.json',
@@ -108,6 +111,7 @@ describe('selena generator', function() {
             'lib/ssl/.gitkeep',
             'lib/authorization.js',
             'lib/loader.js',
+            'lib/mailer.js',
             'lib/debugger.js',
             'lib/passport.js',
             'lib/passportRoutes.js',
@@ -147,7 +151,7 @@ describe('selena generator', function() {
             'enableTravis': true
         });
         this.app.options['skip-install'] = true;
-        this.app.run({}, function() {
+        this.app.run({}, function () {
             helpers.assertFiles(expected);
             done();
         });

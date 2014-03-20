@@ -1,8 +1,8 @@
 [![Selena.js](logo.png)](http://selenajs.enytc.com)
 
-#Selena.js [![Build Status](https://secure.travis-ci.org/chrisenytc/selena.png?branch=master)](http://travis-ci.org/chrisenytc/selena) [![Dependency Status](https://gemnasium.com/chrisenytc/selena.png)](https://gemnasium.com/chrisenytc/selena) [![GH version](https://badge-me.herokuapp.com/app/gh/chrisenytc/selena.png)](http://badges.enytc.com/for/gh/chrisenytc/selena) [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/chrisenytc/selena/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+#Selena.js [![Build Status](https://secure.travis-ci.org/enytc/selena.png?branch=master)](http://travis-ci.org/enytc/selena) [![GH version](https://badge-me.herokuapp.com/app/gh/enytc/selena.png)](http://badges.enytc.com/for/gh/enytc/selena) [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/enytc/selena/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
-> An wonderful full stack framework for node.js
+> A wonderful full stack framework for node.js
 
 ## Getting Started
 
@@ -59,7 +59,7 @@ yo selena
 
 ###### Learn to use the Selena.js generator
 
-[![Demo](https://raw2.github.com/enytc/selena/gh-pages/src/img/howtouse-play.png)](http://ascii.io/a/7475/)
+[![Demo](https://raw2.github.com/enytc/selena/gh-pages/src/img/howtouse-play.png)](http://ascii.io/a/7794/)
 
 For more informations access this links.
 
@@ -242,8 +242,6 @@ module.exports = {
   }
 };
 ```
-
-For more information see the documentation of the implementation of the restful Selena.js: [express-resource](https://npmjs.org/package/express-resource)
 
 ## Models
 
@@ -447,7 +445,7 @@ Example:
 ```javascript
 /*
  * selena
- * https://github.com/chrisenytc/selena
+ * https://github.com/enytc/selena
  *
  * Copyright (c) 2014 Christopher EnyTC
  * Licensed under the MIT license.
@@ -534,6 +532,8 @@ The `assets` folder is where are the project dependencies, installed using bower
 The `public` folder is where are the frontend application with angularJS.
 
 **controllers** Folder that contains all the angularJS controllers.
+
+**decorators** Folder that contains all the angularJS decorators.
 
 **directives** Folder that contains all the angularJS directives.
 
